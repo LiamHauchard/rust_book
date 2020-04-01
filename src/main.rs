@@ -1,3 +1,7 @@
+mod chapter_3;
+
+use chapter_3::days_of_christmas;
+
 fn main() {
-    println!("Hello, world!");
+    days_of_christmas();
 }
