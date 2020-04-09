@@ -1,7 +1,12 @@
 mod chapter_3;
+mod chapter_4;
 
-use chapter_3::days_of_christmas;
+use chapter_4::first_word;
 
 fn main() {
-    days_of_christmas();
+    let sentence = String::from("Hello world");
+
+    let word = first_word(&sentence[..]);
+
+    println!("{}", word);
 }
