@@ -1,12 +1,12 @@
 mod chapter_3;
 mod chapter_4;
+mod chapter_5;
 
-use chapter_4::first_word;
+use chapter_5::Rectangle;
 
 fn main() {
-    let sentence = String::from("Hello world");
+    let rec = Rectangle::new(10, 10);
 
-    let word = first_word(&sentence[..]);
-
-    println!("{}", word);
+    println!("{:#?}", rec);
+    println!("rec's area: {}", rec.area());
 }
